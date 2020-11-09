@@ -12,7 +12,8 @@ h1{
 }
 
 h2{
-
+  font-weight: 800;
+  font-size: 50px;
 }
 
 h3{
@@ -23,7 +24,12 @@ h3{
 h4{
   font-weight: bold;
   font-size: 20px;
+}
 
+p {
+  font-weight: bold;
+  font-size: 30px;
+  margin:30px 0;
 }
 
 .wrapper{
@@ -101,24 +107,68 @@ button.cta.alt {
 
 }
 
+nav {
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0,0,0,.2);
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  display: block;
+  width: 300px;
+  height: 40px;
+  position: absolute; top: 50%; left: 0;
+  margin-top:-20px;
+  margin-left: 30px;
+  background: url(characters/the-gang-logo.png) no-repeat 0 0;
+  background-size: 100%;
+  overflow: hidden;
+  text-indent: -999px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+  display: black;
+  float: right;
+}
+
+nav ul li a{
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #111111;
+  text-decoration: none;
+  padding: 35px 10px;
+  line-height: 30px;
+}
+
+.more-info {
+  text-align: center;
+}
+
+.more-info h2 {
+
+}
+
+
 
 /*
-<div class="hero-banner">
-  <div class="wrapper">
-    <h4>Introducing to you</h4>
-    <h1>
-      The Silliest & <br/>
-      Most Awesome Gang <br/>
-      In The World!
-    </h1>
-    <h3>
-      It's Circle Boy, Hat Dude & Red Girl. <br/>
-      They're the best of friends.
-    </h3>
-    <a class="cta all" href="#more-info">Read More</a>
-  </div>
-  <div class="character1"><img src="characters/" alt=""></div>
-  <div class="character2"></div>
-  <div class="character3"></div>
+<div class="more-info" id="more-info">
+  <h2>Join Our Fan Club</h2>
+  <p>Every week we have <span style="background-color: yellow;" class="highlight">a party</span>. If you want to join us then join our fan club.
+     Members will also receive pictures of us in all kinds of shapes and sizes.
+     Cool huh?</p>
+     <button class="cta">Sign Me Up!</button>
 </div>
 /*
