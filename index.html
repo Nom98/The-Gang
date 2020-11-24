@@ -28,7 +28,7 @@
     <nav>
       <a href="#" class="logo">The Gang</a>
       <ul style="list-style-type:none;" >
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="javascript:()" onclick="showPopup();">Sign Up</a></li>
         <li><a href="#story">The Story</a></li>
         <li><a href="#more-info">More Info</a></li>
       </ul>
@@ -39,7 +39,7 @@
         <p>Every week we have <span class="highlight">a party</span>. If you want to join us then join our fan club.
          Members will also receive pictures of us in all kinds of shapes and sizes.
          Cool huh?</p>
-        <button class="cta">Sign Me Up!</button>
+        <button class="cta" onclick="showPopup();">Sign Me Up!</button>
       </div>
     </div>
     <div id="story"></div>
@@ -74,31 +74,36 @@
     <footer>
       Made by Nomaira
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="blanket"></div>
       <div class="content">
         <h2>Fill In Your Details</h2>
-        <form class="" action="index.html" method="post">
-          <div class="item">
-            <label>Your First Name</label>
-            <input type="text" placeholder="Eva" value="Shirley">
+        <form action="" >
+          <div class="row">
+            <div class="item">
+              <label>Your First Name</label>
+              <input type="text" placeholder="Eva" value="Shirley">
+            </div>
+            <div class="item">
+              <label>Your Last Name</label>
+              <input type="text" placeholder="Ave">
+            </div>
           </div>
-          <div class="item">
-            <label>Your Last Name</label>
-            <input type="text" placeholder="Ave">
-          </div>
-          <div class="item">
-            <label>Your Favourite Colour</label>
-            <input type="text" placeholder="Blue" >
-          </div>
-          <div class="item">
-            <label>Your Favourite Shape</label>
-            <input type="text" placeholder="Circle">
+          <div class="row">
+            <div class="item">
+              <label>Your Favourite Colour</label>
+              <input type="text" placeholder="Blue" >
+            </div>
+            <div class="item">
+              <label>Your Favourite Shape</label>
+              <input type="text" placeholder="Circle">
+            </div>
           </div>
           <button class="cta">I Want In!</button>
         </form>
-        <button class="close"><b>x<b/></button>
+        <button class="close" onclick="hidePopup();">close</button>
       </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
