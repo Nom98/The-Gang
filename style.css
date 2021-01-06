@@ -139,6 +139,7 @@ nav .logo {
 }
 
 nav ul {
+  list-style: none;
   padding: 0;
   margin: 0 20px 0 0;
 }
@@ -183,9 +184,9 @@ nav ul li a{
   font-weight: 800;
 }
 
-.more-info button {
+/* .more-info button {
 
-}
+} */
 
 .seperator {
   width: 470px;
@@ -370,34 +371,3 @@ footer {
   width: 100%;
   padding: 15px 20px;
 }
-
-
-
-/*
-<div class="popup">
-  <div class="blanket"></div>
-  <div class="content">
-    <h2>Fill In Your Details</h2>
-    <form class="" action="index.html" method="post">
-      <div class="item">
-        <label>Your First Name</label>
-        <input type="text" placeholder="Eva" value="Shirley">
-      </div>
-      <div class="item">
-        <label>Your Last Name</label>
-        <input type="text" placeholder="Ave">
-      </div>
-      <div class="item">
-        <label>Your Favourite Colour</label>
-        <input type="text" placeholder="Blue" >
-      </div>
-      <div class="item">
-        <label>Your Favourite Shape</label>
-        <input type="text" placeholder="Circle">
-      </div>
-      <button class="cta">I Want In!</button>
-    </form>
-    <button class="close"><b>x<b/></button>
-  </div>
-</div>
-/*

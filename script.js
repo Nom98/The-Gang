@@ -2,13 +2,13 @@ console.log('hey there!');
 
 
 
-function showpopup () {
+function showPopup() {
   var popup = document.getElementById('popup');
-  popup.classlist.add('show');
+  popup.classList.add('show');
 }
 
 
-unction hidepopup () {
+function hidePopup() {
   var popup = document.getElementById('popup');
-  popup.classlist.remove('show');
+  popup.classList.remove('show');
 }
